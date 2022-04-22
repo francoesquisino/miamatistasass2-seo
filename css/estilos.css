@@ -1,0 +1,89 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0px;
+  margin: 0px; }
+
+/* MAPS DE COLORES */
+/* Usando Extend */
+.margin-top, .logo, .navbar {
+  margin-top: 15px; }
+
+/* Usando Mixins*/
+a {
+  color: #595358 !important;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600; }
+
+.navbar-nav a:hover {
+  color: #595358;
+  text-decoration: none;
+  border-bottom: solid 2px #595358; }
+
+.galeria img {
+  margin: 3px; }
+
+.footer {
+  background-color: black; }
+
+.footer img {
+  width: 30px;
+  margin: 20px; }
+
+button {
+  font-size: 20px;
+  background-color: #595358;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-decoration: none;
+  margin-top: 10px; }
+
+button:hover {
+  background-color: #595358;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-decoration: none;
+  opacity: 0.7; }
+
+.producto2 {
+  display: flex;
+  flex-wrap: wrap; }
+
+.botonyprecio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  width: 100%;
+  justify-content: space-around; }
+
+.precio {
+  color: #595358; }
+
+.div__home {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../img/almh601.jpg");
+  background-size: cover; }
+
+.div__hometitulo {
+  color: white; }
+
+.div__parrafo {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 500px;
+  width: 400px; }
+
+.titulo {
+  margin: 40px;
+  color: #595358; }
+
+p {
+  color: black; }

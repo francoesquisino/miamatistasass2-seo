@@ -1,0 +1,127 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+/* MAPS DE COLORES */
+$colores:(
+    color1: red,
+    color2: white,
+    color3: rgb(89, 83, 88),
+    color4:black
+);
+/* Usando Extend */
+.margin-top{
+    margin-top: 15px;
+}
+
+.logo{
+    @extend .margin-top;
+}
+
+.navbar{
+    @extend .margin-top;
+}
+/* Usando Mixins*/
+
+@mixin tamano ($tamano_fuente,$ancho_fuente){
+    font-size: $tamano_fuente;
+    font-weight: $ancho_fuente;
+}
+
+
+
+a {
+    color:rgb(89, 83, 88) !important;
+    text-decoration: none;
+    @include tamano(18px, 600 );
+}
+
+.navbar-nav a:hover {
+    color:rgb(89, 83, 88);
+    text-decoration: none;
+    border-bottom: solid 2px rgb(89, 83, 88);
+
+}
+
+.galeria img{
+    margin:3px;
+}
+
+.footer{
+    background-color: black;
+}
+.footer img{
+    width: 30px;
+    margin:20px
+}
+
+button {
+    font-size: 20px;
+    background-color: rgb(89, 83, 88);
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: rgb(89, 83, 88);
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+
+.producto2{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.botonyprecio{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+.precio{
+    color: rgb(89, 83, 88);
+    
+}
+
+.div__home{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../img/almh601.jpg");
+    background-size: cover;
+}
+.div__hometitulo{
+    color:white;
+}
+
+
+.div__parrafo {
+    color:map-get($colores, color2 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgba(0, 0, 0, 0.7);
+    height: 500px;
+    width: 400px;
+}
+.titulo{
+    margin: 40px;;
+    color: rgb(89, 83, 88);
+}
+p{
+    color:black;
+}
+
